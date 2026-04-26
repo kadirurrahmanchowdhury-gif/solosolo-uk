@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CarryCute | Cute Bag Charms, Keychains & Mini Plushies UK</title>
+<meta name="description" content="Shop cute bag charms, mini plushies, keychains and personalised initial charms. UK delivery, student discount, mystery boxes from £12.99." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,30..100&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FFF8F2;
+    --cream-deep: #FBEFE4;
+    --pink-soft: #FFD9E3;
+    --pink-blush: #F7C4D2;
+    --rose: #E89BAA;
+    --rose-deep: #C97A8B;
+    --charcoal: #2B2B2B;
+    --charcoal-soft: #5C5557;
+    --gold: #E6C589;
+    --gold-deep: #C9A766;
+    --line: #EFE3D7;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--charcoal);
+    background: var(--cream);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    color: var(--charcoal);
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
+
+  /* ======= ANNOUNCEMENT BAR ======= */
+  .announce {
+    background: var(--charcoal);
+    color: var(--cream);
+    font-size: 13px;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .announce-track {
+    display: flex;
+    gap: 60px;
+    white-space: nowrap;
+    animation: scroll 35s linear infinite;
+    width: max-content;
+  }
+  .announce span { letter-spacing: 0.04em; }
+  .announce span::before { content: '✦'; margin-right: 16px; color: var(--gold); }
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ======= HEADER ======= */
+  header {
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+  }
+  .logo {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: -0.02em;
+    font-style: italic;
+  }
+  .logo span { color: var(--rose); font-style: normal; font-weight: 500; }
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .nav-links a { transition: color .2s; position: relative; }
+  .nav-links a:hover { color: var(--rose-deep); }
+  .nav-icons { display: flex; gap: 22px; align-items: center; }
+  .nav-icons button {
+    background: none; border: none; cursor: pointer;
+    color: var(--charcoal); padding: 4px;
+  }
+  .nav-icons svg { width: 20px; height: 20px; stroke-width: 1.6; }
+  .cart-badge {
+    position: relative;
+  }
+  .cart-badge::after {
+    content: '2';
+    position: absolute;
+    top: -4px; right: -6px;
+    background: var(--rose);
+    color: white;
+    font-size: 10px;
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+  }
+
+  /* ======= HERO ======= */
+  .hero {
+    position: relative;
+    background: var(--cream);
+    padding: 80px 0 100px;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, var(--pink-soft) 0%, transparent 70%);
+    z-index: 0;
+    opacity: 0.6;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -150px; left: -100px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, var(--cream-deep) 0%, transparent 70%);
+    z-index: 0;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rose-deep);
+    margin-bottom: 28px;
+  }
+  .hero-eyebrow::before, .hero-eyebrow::after {
+    content: ''; height: 1px; width: 30px; background: var(--rose);
+  }
+  .hero h1 {
+    font-size: clamp(48px, 7vw, 88px);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+    margin-bottom: 28px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--rose-deep);
+    font-weight: 300;
+  }
+  .hero p {
+    font-size: 18px;
+    color: var(--charcoal-soft);
+    margin-bottom: 40px;
+    max-width: 480px;
+    line-height: 1.65;
+  }
+  .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all .25s ease;
+    border: none;
+  }
+  .btn-primary {
+    background: var(--charcoal);
+    color: var(--cream);
+  }
+  .btn-primary:hover {
+    background: var(--rose-deep);
+    transform: translateY(-2px);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--charcoal);
+    border: 1.5px solid var(--charcoal);
+  }
+  .btn-secondary:hover {
+    background: var(--charcoal);
+    color: var(--cream);
+  }
+  .btn svg { width: 16px; height: 16px; }
+
+  /* Hero visual - layered cards */
+  .hero-visual {
+    position: relative;
+    height: 540px;
+  }
+  .charm-card {
+    position: absolute;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(43,43,43,0.08);
+    padding: 18px;
+    width: 200px;
+    transition: transform .4s ease;
+  }
+  .charm-card:hover { transform: scale(1.05) rotate(0deg) !important; }
+  .charm-img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+  }
+  .charm-card .name { font-size: 13px; font-weight: 600; }
+  .charm-card .price { font-size: 12px; color: var(--rose-deep); margin-top: 2px; }
+
+  .card-1 {
+    top: 20px; left: 30px;
+    transform: rotate(-6deg);
+  }
+  .card-1 .charm-img { background: linear-gradient(135deg, #FFD9E3, #F7C4D2); }
+  .card-2 {
+    top: 90px; right: 0;
+    transform: rotate(4deg);
+    z-index: 2;
+  }
+  .card-2 .charm-img { background: linear-gradient(135deg, #FFF8F2, #E6C589); }
+  .card-3 {
+    bottom: 30px; left: 70px;
+    transform: rotate(3deg);
+  }
+  .card-3 .charm-img { background: linear-gradient(135deg, #FBEFE4, #FFD9E3); }
+  .card-4 {
+    bottom: 80px; right: 40px;
+    transform: rotate(-4deg);
+    z-index: 2;
+  }
+  .card-4 .charm-img { background: linear-gradient(135deg, #E89BAA, #FFD9E3); }
+
+  .floating-tag {
+    position: absolute;
+    background: var(--charcoal);
+    color: var(--cream);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding: 8px 16px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    z-index: 3;
+  }
+  .tag-new {
+    top: 0; right: 100px;
+    background: var(--rose);
+  }
+  .tag-restock {
+    bottom: 0; left: 0;
+    background: var(--gold-deep);
+    color: var(--charcoal);
+  }
+
+  /* ======= TRUST BAR ======= */
+  .trust-bar {
+    background: var(--cream-deep);
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 13px;
+  }
+  .trust-icon {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid var(--line);
+  }
+  .trust-icon svg { width: 18px; height: 18px; stroke-width: 1.6; }
+  .trust-text strong { display: block; font-size: 13px; font-weight: 600; margin-bottom: 2px; }
+  .trust-text span { font-size: 12px; color: var(--charcoal-soft); }
+
+  /* ======= SECTIONS ======= */
+  section { padding: 100px 0; }
+  .section-head {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .section-head .label {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--rose-deep);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .section-head h2 {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 400;
+    margin-bottom: 14px;
+  }
+  .section-head h2 em { font-style: italic; color: var(--rose-deep); font-weight: 300; }
+  .section-head p {
+    font-size: 16px;
+    color: var(--charcoal-soft);
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* ======= CATEGORIES ======= */
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .cat-card {
+    background: white;
+    border-radius: 20px;
+    padding: 28px 24px;
+    text-align: center;
+    transition: all .3s ease;
+    cursor: pointer;
+    border: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+  .cat-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--rose);
+    box-shadow: 0 12px 30px rgba(232,155,170,0.15);
+  }
+  .cat-emoji {
+    font-size: 48px;
+    margin-bottom: 16px;
+    display: block;
+  }
+  .cat-card h3 {
+    font-size: 22px;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+  .cat-card .count {
+    font-size: 12px;
+    color: var(--charcoal-soft);
+    letter-spacing: 0.05em;
+  }
+  .cat-card.featured {
+    grid-column: span 2;
+    background: linear-gradient(135deg, var(--pink-soft), var(--cream-deep));
+    text-align: left;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+  }
+  .cat-card.featured h3 { font-size: 32px; font-style: italic; font-weight: 400; }
+  .cat-card.featured .arrow {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--charcoal);
+    color: var(--cream);
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 16px;
+    transition: transform .3s;
+  }
+  .cat-card.featured:hover .arrow { transform: translateX(6px); }
+
+  /* ======= BEST SELLERS ======= */
+  .bestsellers { background: var(--cream); }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .product {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform .3s, box-shadow .3s;
+    cursor: pointer;
+    border: 1px solid var(--line);
+  }
+  .product:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(43,43,43,0.08);
+  }
+  .product-img {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+    position: relative;
+  }
+  .product-img .badge {
+    position: absolute;
+    top: 14px; left: 14px;
+    background: var(--charcoal);
+    color: var(--cream);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    padding: 4px 10px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .product-img .heart {
+    position: absolute;
+    top: 14px; right: 14px;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: white;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    transition: transform .2s;
+  }
+  .product-img .heart:hover { transform: scale(1.1); }
+  .product-img .heart svg { width: 14px; height: 14px; stroke: var(--charcoal); fill: none; }
+  .product-info {
+    padding: 18px 20px 22px;
+  }
+  .product-info h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-family: 'Inter', sans-serif;
+  }
+  .product-info .desc {
+    font-size: 13px;
+    color: var(--charcoal-soft);
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+  .product-info .price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .product-info .price {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--rose-deep);
+    font-family: 'Fraunces', serif;
+  }
+  .product-info .stars {
+    font-size: 11px;
+    color: var(--gold-deep);
+    letter-spacing: 0.1em;
+  }
+
+  .center-btn { text-align: center; margin-top: 50px; }
+
+  /* ======= MYSTERY BOX ======= */
+  .mystery {
+    padding: 0;
+  }
+  .mystery-inner {
+    background: linear-gradient(135deg, var(--charcoal) 0%, #3D3537 100%);
+    color: var(--cream);
+    border-radius: 32px;
+    margin: 60px 0;
+    padding: 80px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .mystery-inner::before {
+    content: '';
+    position: absolute;
+    top: -50%; right: -10%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(255,217,227,0.15) 0%, transparent 60%);
+  }
+  .mystery-text { position: relative; z-index: 1; }
+  .mystery-text .label {
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .mystery-text h2 {
+    font-size: clamp(40px, 5vw, 64px);
+    color: var(--cream);
+    font-weight: 400;
+    margin-bottom: 24px;
+    font-style: italic;
+  }
+  .mystery-text p {
+    color: rgba(255,248,242,0.8);
+    font-size: 17px;
+    margin-bottom: 32px;
+    line-height: 1.65;
+    max-width: 440px;
+  }
+  .mystery-features {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+  }
+  .mystery-feat {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 13px; color: var(--gold);
+  }
+  .mystery-feat::before { content: '✦'; }
+  .btn-gold {
+    background: var(--gold);
+    color: var(--charcoal);
+  }
+  .btn-gold:hover {
+    background: var(--cream);
+    transform: translateY(-2px);
+  }
+  .mystery-visual {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box {
+    width: 280px; height: 280px;
+    background: linear-gradient(145deg, var(--rose), var(--pink-blush));
+    border-radius: 20px;
+    position: relative;
+    transform: rotate(-8deg);
+    box-shadow: 0 30px 80px rgba(232,155,170,0.3);
+  }
+  .box::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 0;
+    width: 100%; height: 4px;
+    background: var(--gold);
+    transform: translateY(-50%);
+  }
+  .box::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%;
+    width: 4px; height: 100%;
+    background: var(--gold);
+    transform: translateX(-50%);
+  }
+  .ribbon {
+    position: absolute;
+    top: -20px; left: 50%;
+    transform: translateX(-50%);
+    width: 80px; height: 50px;
+    background: var(--gold);
+    clip-path: polygon(0 0, 50% 100%, 100% 0, 80% 0, 50% 60%, 20% 0);
+    z-index: 2;
+  }
+  .box-emoji {
+    position: absolute;
+    font-size: 60px;
+  }
+  .box-emoji.e1 { top: -30px; right: -40px; transform: rotate(15deg); }
+  .box-emoji.e2 { bottom: -20px; left: -30px; transform: rotate(-15deg); }
+  .box-emoji.e3 { top: 40%; right: -50px; transform: rotate(20deg); }
+
+  /* ======= STUDENT DEALS ======= */
+  .deals { background: var(--cream-deep); }
+  .deals-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .deal-card {
+    background: white;
+    border-radius: 24px;
+    padding: 50px 40px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    transition: transform .3s;
+  }
+  .deal-card:hover { transform: translateY(-3px); }
+  .deal-card.pink {
+    background: linear-gradient(135deg, var(--pink-soft), white);
+  }
+  .deal-card.cream {
+    background: linear-gradient(135deg, var(--cream), var(--cream-deep));
+  }
+  .deal-tag {
+    display: inline-block;
+    background: var(--charcoal);
+    color: var(--cream);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    padding: 6px 14px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .deal-card h3 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    font-style: italic;
+  }
+  .deal-card p {
+    color: var(--charcoal-soft);
+    margin-bottom: 28px;
+    max-width: 320px;
+  }
+  .deal-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    border-bottom: 1.5px solid var(--charcoal);
+    padding-bottom: 4px;
+    transition: gap .2s;
+  }
+  .deal-link:hover { gap: 14px; }
+
+  /* ======= PERSONALISED ======= */
+  .personal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .personal-visual {
+    background: linear-gradient(135deg, var(--cream-deep), var(--pink-soft));
+    border-radius: 28px;
+    padding: 60px 40px;
+    text-align: center;
+    position: relative;
+  }
+  .letters-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .letter {
+    aspect-ratio: 1;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--charcoal);
+    border: 1px solid var(--line);
+    transition: all .2s;
+    cursor: pointer;
+  }
+  .letter:hover {
+    background: var(--rose);
+    color: white;
+    transform: scale(1.1);
+  }
+  .letter.active {
+    background: var(--charcoal);
+    color: var(--cream);
+  }
+  .personal-text .label {
+    color: var(--rose-deep);
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: block;
+    font-weight: 500;
+  }
+  .personal-text h2 {
+    font-size: clamp(36px, 5vw, 56px);
+    margin-bottom: 24px;
+    font-weight: 400;
+  }
+  .personal-text h2 em { font-style: italic; color: var(--rose-deep); }
+  .personal-text p {
+    color: var(--charcoal-soft);
+    font-size: 17px;
+    margin-bottom: 32px;
+    max-width: 460px;
+  }
+
+  /* ======= REVIEWS ======= */
+  .reviews { background: var(--cream); }
+  .review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+  .review {
+    background: white;
+    border-radius: 20px;
+    padding: 36px 32px;
+    border: 1px solid var(--line);
+    position: relative;
+  }
+  .review .quote-mark {
+    font-family: 'Fraunces', serif;
+    font-size: 60px;
+    color: var(--rose);
+    line-height: 0.5;
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+  .review .stars {
+    color: var(--gold-deep);
+    margin-bottom: 14px;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+  }
+  .review p {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-style: italic;
+    color: var(--charcoal);
+    font-weight: 400;
+  }
+  .review-author {
+    display: flex; align-items: center; gap: 12px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+  .avatar {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--pink-soft), var(--rose));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .review-author strong { font-size: 14px; display: block; }
+  .review-author span { font-size: 12px; color: var(--charcoal-soft); }
+
+  .social-strip {
+    text-align: center;
+    padding: 40px;
+    background: var(--cream-deep);
+    border-radius: 20px;
+  }
+  .social-strip .label {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--rose-deep);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .social-strip h3 {
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  .social-icons { display: flex; gap: 16px; justify-content: center; }
+  .social-icon {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: white;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid var(--line);
+    transition: all .2s;
+  }
+  .social-icon:hover {
+    background: var(--rose);
+    color: white;
+    border-color: var(--rose);
+    transform: translateY(-2px);
+  }
+  .social-icon svg { width: 18px; height: 18px; }
+
+  /* ======= FAQ ======= */
+  .faq-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--line);
+  }
+  .faq-q {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 26px 0;
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--charcoal);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    transition: color .2s;
+  }
+  .faq-q:hover { color: var(--rose-deep); }
+  .faq-q .icon {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    border: 1.5px solid var(--charcoal);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: transform .3s;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .faq-item.open .faq-q .icon {
+    transform: rotate(45deg);
+    background: var(--charcoal);
+    color: var(--cream);
+  }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .35s ease;
+    color: var(--charcoal-soft);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .faq-item.open .faq-a {
+    max-height: 200px;
+    padding-bottom: 26px;
+  }
+
+  /* ======= NEWSLETTER ======= */
+  .newsletter {
+    padding: 0;
+  }
+  .news-inner {
+    background: linear-gradient(135deg, var(--rose), var(--pink-blush));
+    border-radius: 32px;
+    padding: 80px 60px;
+    text-align: center;
+    margin: 60px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .news-inner::before {
+    content: '';
+    position: absolute;
+    top: -100px; left: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+  }
+  .news-inner::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  }
+  .news-inner > * { position: relative; z-index: 1; }
+  .news-inner .label {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 16px;
+    display: block;
+    font-weight: 500;
+  }
+  .news-inner h2 {
+    color: white;
+    font-size: clamp(36px, 5vw, 56px);
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .news-inner p {
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 36px;
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .news-form {
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    gap: 8px;
+    background: white;
+    padding: 6px;
+    border-radius: 100px;
+  }
+  .news-form input {
+    flex: 1;
+    border: none;
+    padding: 14px 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    background: transparent;
+    outline: none;
+    color: var(--charcoal);
+  }
+  .news-form button {
+    background: var(--charcoal);
+    color: var(--cream);
+    border: none;
+    padding: 14px 28px;
+    border-radius: 100px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background .2s;
+  }
+  .news-form button:hover { background: var(--rose-deep); }
+  .news-small {
+    font-size: 12px;
+    color: rgba(255,255,255,0.8);
+    margin-top: 16px;
+  }
+
+  /* ======= FOOTER ======= */
+  footer {
+    background: var(--charcoal);
+    color: rgba(255,248,242,0.85);
+    padding: 80px 0 30px;
+  }
+  .foot-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 60px;
+  }
+  .foot-brand .logo {
+    color: var(--cream);
+    font-size: 32px;
+    margin-bottom: 16px;
+    display: block;
+  }
+  .foot-brand .logo span { color: var(--rose); }
+  .foot-brand p {
+    font-size: 14px;
+    color: rgba(255,248,242,0.6);
+    max-width: 280px;
+    margin-bottom: 24px;
+  }
+  .foot-socials { display: flex; gap: 10px; }
+  .foot-socials a {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,248,242,0.2);
+    display: flex; align-items: center; justify-content: center;
+    transition: all .2s;
+  }
+  .foot-socials a:hover {
+    background: var(--rose);
+    border-color: var(--rose);
+  }
+  .foot-socials svg { width: 16px; height: 16px; }
+
+  .foot-col h4 {
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .foot-col ul { list-style: none; }
+  .foot-col li { margin-bottom: 12px; }
+  .foot-col a {
+    font-size: 14px;
+    color: rgba(255,248,242,0.7);
+    transition: color .2s;
+  }
+  .foot-col a:hover { color: var(--rose); }
+
+  .foot-bottom {
+    border-top: 1px solid rgba(255,248,242,0.1);
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .foot-bottom .copy {
+    font-size: 13px;
+    color: rgba(255,248,242,0.5);
+  }
+  .pay-icons {
+    display: flex; gap: 10px; align-items: center;
+  }
+  .pay-icon {
+    background: rgba(255,248,242,0.95);
+    color: var(--charcoal);
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* ======= RESPONSIVE ======= */
+  @media (max-width: 1024px) {
+    .hero-grid, .personal-grid, .mystery-inner { grid-template-columns: 1fr; gap: 50px; }
+    .hero-visual { height: 460px; max-width: 500px; margin: 0 auto; }
+    .categories { grid-template-columns: repeat(2, 1fr); }
+    .cat-card.featured { grid-column: span 2; }
+    .product-grid { grid-template-columns: repeat(2, 1fr); }
+    .review-grid { grid-template-columns: 1fr; }
+    .deals-grid { grid-template-columns: 1fr; }
+    .foot-grid { grid-template-columns: 1fr 1fr; }
+    .nav-links { display: none; }
+    .trust-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+    .mystery-inner, .news-inner { padding: 60px 30px; }
+  }
+  @media (max-width: 600px) {
+    .wrap { padding: 0 20px; }
+    section { padding: 70px 0; }
+    .hero { padding: 50px 0 70px; }
+    .product-grid, .categories { grid-template-columns: 1fr; }
+    .cat-card.featured { grid-column: span 1; }
+    .foot-grid { grid-template-columns: 1fr; gap: 36px; }
+    .news-form { flex-direction: column; border-radius: 20px; padding: 12px; }
+    .news-form input, .news-form button { width: 100%; padding: 14px; }
+    .news-form button { border-radius: 100px; }
+    .hero-visual { height: 400px; }
+    .charm-card { width: 160px; }
+    .charm-img { font-size: 60px; }
+    .letters-grid { grid-template-columns: repeat(4, 1fr); }
+    .trust-grid { grid-template-columns: 1fr; }
+    .hero-buttons { width: 100%; }
+    .btn { width: 100%; justify-content: center; }
+  }
+
+  /* Reveal animations */
+  .reveal { opacity: 0; transform: translateY(20px); transition: all .8s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- ======= ANNOUNCEMENT BAR ======= -->
+<div class="announce">
+  <div class="announce-track">
+    <span>Free UK delivery over £25</span>
+    <span>Student discount: STUDENT10</span>
+    <span>New drops every Friday</span>
+    <span>Hand-packed in Birmingham</span>
+    <span>Free UK delivery over £25</span>
+    <span>Student discount: STUDENT10</span>
+    <span>New drops every Friday</span>
+    <span>Hand-packed in Birmingham</span>
+  </div>
+</div>
+
+<!-- ======= HEADER ======= -->
+<header>
+  <div class="wrap">
+    <nav class="nav">
+      <a href="#" class="logo">carry<span>cute</span></a>
+      <div class="nav-links">
+        <a href="#categories">Shop</a>
+        <a href="#bestsellers">Best Sellers</a>
+        <a href="#mystery">Mystery Box</a>
+        <a href="#personal">Personalise</a>
+        <a href="#">About</a>
+      </div>
+      <div class="nav-icons">
+        <button aria-label="Search"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
+        <button aria-label="Account"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+        <button aria-label="Cart" class="cart-badge"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ======= HERO ======= -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <span class="hero-eyebrow">New drop · spring '26</span>
+        <h1>Make your bag<br>feel like <em>you</em>.</h1>
+        <p>Cute charms, mini plushies and aesthetic accessories — designed for your school bag, tote, backpack or handbag. Affordable. Trendy. A little bit obsessed-with.</p>
+        <div class="hero-buttons">
+          <a href="#categories" class="btn btn-primary">Shop Charms
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#mystery" class="btn btn-secondary">Try a Mystery Box</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <span class="floating-tag tag-new">✦ New In</span>
+        <div class="charm-card card-1">
+          <div class="charm-img">🍓</div>
+          <div class="name">Strawberry Milk</div>
+          <div class="price">£4.99</div>
+        </div>
+        <div class="charm-card card-2">
+          <div class="charm-img">🎀</div>
+          <div class="name">Velvet Bow</div>
+          <div class="price">£5.50</div>
+        </div>
+        <div class="charm-card card-3">
+          <div class="charm-img">🐻</div>
+          <div class="name">Mini Bear Plush</div>
+          <div class="price">£7.99</div>
+        </div>
+        <div class="charm-card card-4">
+          <div class="charm-img">🍒</div>
+          <div class="name">Cherry Cluster</div>
+          <div class="price">£5.99</div>
+        </div>
+        <span class="floating-tag tag-restock">Just Restocked</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= TRUST BAR ======= -->
+<div class="trust-bar">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 7h14l-1.4 9.5a2 2 0 0 1-2 1.5H8.4a2 2 0 0 1-2-1.5L5 7Z"/><path d="M9 10v4M15 10v4"/></svg></div>
+        <div class="trust-text"><strong>Free UK delivery</strong><span>On orders over £25</span></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg></div>
+        <div class="trust-text"><strong>Easy 30-day returns</strong><span>Change your mind, no stress</span></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <div class="trust-text"><strong>Secure checkout</strong><span>SSL protected</span></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+        <div class="trust-text"><strong>Student discount</strong><span>10% off with STUDENT10</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======= CATEGORIES ======= -->
+<section id="categories">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Find your vibe</span>
+      <h2>Shop by <em>category</em></h2>
+      <p>Pick a category, build your bag.</p>
+    </div>
+    <div class="categories">
+      <div class="cat-card featured">
+        <div>
+          <span style="font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--rose-deep); font-weight: 500;">Most Loved</span>
+          <h3>Charm Club</h3>
+          <p style="color: var(--charcoal-soft); margin-top: 8px; font-size: 14px;">Bag charms in every aesthetic — coquette, y2k, pastel-core.</p>
+        </div>
+        <div class="arrow">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">🔑</span>
+        <h3>Key Crew</h3>
+        <span class="count">42 items</span>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">🐻</span>
+        <h3>Tiny Treasures</h3>
+        <span class="count">28 items</span>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">📱</span>
+        <h3>Phone Besties</h3>
+        <span class="count">36 items</span>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">🎁</span>
+        <h3>Cute Bundles</h3>
+        <span class="count">14 sets</span>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">✨</span>
+        <h3>Surprise Drops</h3>
+        <span class="count">3 box sizes</span>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">💸</span>
+        <h3>The £5 Spot</h3>
+        <span class="count">50+ items</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= BEST SELLERS ======= -->
+<section id="bestsellers" class="bestsellers">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Best sellers</span>
+      <h2>Loved by <em>you</em></h2>
+      <p>The pieces everyone's adding to their bag right now.</p>
+    </div>
+    <div class="product-grid">
+      <div class="product">
+        <div class="product-img" style="background: linear-gradient(135deg, #FFD9E3, #F7C4D2);">
+          <span class="badge">Best Seller</span>
+          <span class="heart"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          🍓
+        </div>
+        <div class="product-info">
+          <h4>Strawberry Milk Charm</h4>
+          <p class="desc">A glossy strawberry milk carton with a soft pink ribbon.</p>
+          <div class="price-row">
+            <span class="price">£4.99</span>
+            <span class="stars">★★★★★</span>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img" style="background: linear-gradient(135deg, #FFF8F2, #E6C589);">
+          <span class="badge">Personalise</span>
+          <span class="heart"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          🤍
+        </div>
+        <div class="product-info">
+          <h4>Pearl Initial Charm</h4>
+          <p class="desc">Personalised letter in pearl finish with gold clasp.</p>
+          <div class="price-row">
+            <span class="price">£6.99</span>
+            <span class="stars">★★★★★</span>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img" style="background: linear-gradient(135deg, #FBEFE4, #FFD9E3);">
+          <span class="badge">Top Rated</span>
+          <span class="heart"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          🐻
+        </div>
+        <div class="product-info">
+          <h4>Mini Bear Plushie</h4>
+          <p class="desc">8cm fluffy bear plush with a sturdy bag clip.</p>
+          <div class="price-row">
+            <span class="price">£7.99</span>
+            <span class="stars">★★★★★</span>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img" style="background: linear-gradient(135deg, #E89BAA, #FFD9E3);">
+          <span class="badge">New</span>
+          <span class="heart"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          🎀
+        </div>
+        <div class="product-info">
+          <h4>Bow-Core Keyring</h4>
+          <p class="desc">Black satin bow with silver hardware. Coquette-coded.</p>
+          <div class="price-row">
+            <span class="price">£5.99</span>
+            <span class="stars">★★★★★</span>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img" style="background: linear-gradient(135deg, #FFD9E3, #FBEFE4);">
+          <span class="heart"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          ☁️
+        </div>
+        <div class="product-info">
+          <h4>Cloud Crew Plushie</h4>
+          <p class="desc">Smiling cloud mini plush with rainbow stitching.</p>
+          <div class="price-row">
+            <span class="price">£6.50</span>
+            <span class="stars">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img" style="background: linear-gradient(135deg, #F7C4D2, #FFD9E3);">
+          <span class="heart"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          🍒
+        </div>
+        <div class="product-info">
+          <h4>Cherry Cluster Charm</h4>
+          <p class="desc">Three glossy red cherries on a gold chain.</p>
+          <div class="price-row">
+            <span class="price">£5.99</span>
+            <span class="stars">★★★★★</span>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img" style="background: linear-gradient(135deg, #FFF8F2, #FFD9E3);">
+          <span class="heart"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          🥤
+        </div>
+        <div class="product-info">
+          <h4>Boba Tea Phone Charm</h4>
+          <p class="desc">Glittery boba tea charm with a wrist strap.</p>
+          <div class="price-row">
+            <span class="price">£4.50</span>
+            <span class="stars">★★★★★</span>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img" style="background: linear-gradient(135deg, #E6C589, #FFF8F2);">
+          <span class="badge">Bundle</span>
+          <span class="heart"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          🎁
+        </div>
+        <div class="product-info">
+          <h4>Letter & Bow Bundle</h4>
+          <p class="desc">Initial charm + matching bow keyring gift set.</p>
+          <div class="price-row">
+            <span class="price">£11.99</span>
+            <span class="stars">★★★★★</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="center-btn">
+      <a href="#" class="btn btn-secondary">Shop all best sellers
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= MYSTERY BOX ======= -->
+<section id="mystery" class="mystery">
+  <div class="wrap">
+    <div class="mystery-inner">
+      <div class="mystery-text">
+        <span class="label">✦ Surprise drops</span>
+        <h2>Open something cute.</h2>
+        <p>Three surprise charms. One cute box. Zero spoilers. Our Mystery Boxes are hand-packed in the UK and worth more than you pay — perfect for treating yourself or gifting a bestie.</p>
+        <div class="mystery-features">
+          <span class="mystery-feat">3+ surprise charms</span>
+          <span class="mystery-feat">Always over value</span>
+          <span class="mystery-feat">No duplicates</span>
+        </div>
+        <a href="#" class="btn btn-gold">Unbox a Mystery Box
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="mystery-visual">
+        <div class="box">
+          <div class="ribbon"></div>
+          <span class="box-emoji e1">✨</span>
+          <span class="box-emoji e2">🎀</span>
+          <span class="box-emoji e3">🍓</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= STUDENT DEALS ======= -->
+<section class="deals">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Student deals</span>
+      <h2>Cute shouldn't <em>cost a lot</em></h2>
+      <p>Student-friendly prices, always. Shop everything under £5 or grab a bundle.</p>
+    </div>
+    <div class="deals-grid">
+      <div class="deal-card pink">
+        <span class="deal-tag">Under £5</span>
+        <h3>The £5 Spot</h3>
+        <p>50+ cute pieces, all five quid or less. Restocked every Friday with fresh drops.</p>
+        <a href="#" class="deal-link">Shop the £5 Spot
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="deal-card cream">
+        <span class="deal-tag">Save more</span>
+        <h3>Cute Bundles</h3>
+        <p>Mix-and-match charm sets — buy three, save 20%. Perfect for switching up your bag's vibe.</p>
+        <a href="#" class="deal-link">Shop bundles
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= PERSONALISED ======= -->
+<section id="personal">
+  <div class="wrap">
+    <div class="personal-grid">
+      <div class="personal-visual">
+        <div class="letters-grid">
+          <div class="letter">A</div>
+          <div class="letter">B</div>
+          <div class="letter">C</div>
+          <div class="letter">D</div>
+          <div class="letter">E</div>
+          <div class="letter">F</div>
+          <div class="letter">G</div>
+          <div class="letter">H</div>
+          <div class="letter">I</div>
+          <div class="letter">J</div>
+          <div class="letter active">K</div>
+          <div class="letter">L</div>
+          <div class="letter">M</div>
+          <div class="letter">N</div>
+          <div class="letter">O</div>
+          <div class="letter">P</div>
+          <div class="letter">Q</div>
+          <div class="letter">R</div>
+          <div class="letter">S</div>
+          <div class="letter">T</div>
+        </div>
+      </div>
+      <div class="personal-text">
+        <span class="label">Personalise yours</span>
+        <h2>Add your initial.<br>Make it <em>yours</em>.</h2>
+        <p>Personalised initial charms in soft pastels and shiny metallics. Pick your letter, pick your colour — match your name, your bestie's, or your crush's (we won't tell).</p>
+        <a href="#" class="btn btn-primary">Personalise yours
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= REVIEWS ======= -->
+<section class="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">★★★★★ 4.9 average</span>
+      <h2>Real reviews from <em>real girlies</em></h2>
+      <p>Over 1,000 happy customers across the UK.</p>
+    </div>
+    <div class="review-grid">
+      <div class="review">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <p>Got the Mystery Box and literally screamed. Everything matched my aesthetic so perfectly, like how??</p>
+        <div class="review-author">
+          <div class="avatar">M</div>
+          <div>
+            <strong>Maya</strong>
+            <span>19, Manchester</span>
+          </div>
+        </div>
+      </div>
+      <div class="review">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <p>Bought the initial charm for my college bag and three girls in my class asked where I got it. 10/10.</p>
+        <div class="review-author">
+          <div class="avatar">A</div>
+          <div>
+            <strong>Aisha</strong>
+            <span>17, Birmingham</span>
+          </div>
+        </div>
+      </div>
+      <div class="review">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <p>Quality is way better than the cheap ones on other sites. Came in cute packaging too. Will be back.</p>
+        <div class="review-author">
+          <div class="avatar">L</div>
+          <div>
+            <strong>Lola</strong>
+            <span>20, London</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="social-strip">
+      <span class="label">Follow us</span>
+      <h3>@carrycute</h3>
+      <div class="social-icons">
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="TikTok">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.84-.1z"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Pinterest">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0a12 12 0 0 0-4.37 23.17c-.1-.94-.2-2.43.05-3.47.22-.94 1.4-6 1.4-6s-.36-.72-.36-1.78c0-1.67.97-2.91 2.17-2.91 1.03 0 1.52.77 1.52 1.7 0 1.03-.66 2.58-1 4.01-.28 1.2.6 2.18 1.79 2.18 2.14 0 3.79-2.26 3.79-5.52 0-2.89-2.07-4.91-5.04-4.91-3.43 0-5.45 2.57-5.45 5.24 0 1.04.4 2.15.9 2.76.1.12.11.22.08.34l-.33 1.36c-.05.22-.18.27-.41.16-1.5-.7-2.43-2.89-2.43-4.65 0-3.78 2.75-7.26 7.92-7.26 4.16 0 7.39 2.96 7.39 6.92 0 4.13-2.6 7.46-6.22 7.46-1.21 0-2.36-.63-2.75-1.38l-.75 2.85c-.27 1.04-1 2.35-1.49 3.15A12 12 0 1 0 12 0z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FAQ ======= -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">FAQ</span>
+      <h2>Quick questions, <em>quick answers</em></h2>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-item open">
+        <button class="faq-q">How long does UK delivery take? <span class="icon">+</span></button>
+        <div class="faq-a">Standard UK delivery is 2–4 working days. Express is 1–2 working days. We post Monday to Friday from the UK.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you offer a student discount? <span class="icon">+</span></button>
+        <div class="faq-a">Yes — use code STUDENT10 at checkout for 10% off your order. Valid on full-price items.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Are the charms strong enough for everyday bags? <span class="icon">+</span></button>
+        <div class="faq-a">Yes. We use sturdy clasps and tested keyrings, so they'll handle your school, college or uni bag without falling off.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What's actually inside a Mystery Box? <span class="icon">+</span></button>
+        <div class="faq-a">3 surprise charms hand-picked to match a cute aesthetic. Total value is always more than you paid. No duplicates in the same box.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I return something if I change my mind? <span class="icon">+</span></button>
+        <div class="faq-a">Of course. You have 30 days to return unused items for a full refund. Personalised initial charms are non-returnable unless faulty.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Are these suitable for younger teens? <span class="icon">+</span></button>
+        <div class="faq-a">Yes — our charms are designed for ages 13+ and are perfect for school, college and uni bags.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= NEWSLETTER ======= -->
+<section class="newsletter">
+  <div class="wrap">
+    <div class="news-inner">
+      <span class="label">Join the club</span>
+      <h2>Get 10% off your first order</h2>
+      <p>Join the CarryCute club for early access to new drops, restocks and student-only deals.</p>
+      <form class="news-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ You\'re in';">
+        <input type="email" placeholder="your@email.com" required />
+        <button type="submit">Join the club</button>
+      </form>
+      <p class="news-small">No spam, just cute stuff. Unsubscribe anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#" class="logo">carry<span>cute</span></a>
+        <p>Cute bag accessories for school, college and uni. Hand-packed with care in Birmingham, UK.</p>
+        <div class="foot-socials">
+          <a href="#" aria-label="Instagram"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.84-.1z"/></svg></a>
+          <a href="#" aria-label="Pinterest"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0a12 12 0 0 0-4.37 23.17c-.1-.94-.2-2.43.05-3.47.22-.94 1.4-6 1.4-6s-.36-.72-.36-1.78c0-1.67.97-2.91 2.17-2.91 1.03 0 1.52.77 1.52 1.7 0 1.03-.66 2.58-1 4.01-.28 1.2.6 2.18 1.79 2.18 2.14 0 3.79-2.26 3.79-5.52 0-2.89-2.07-4.91-5.04-4.91-3.43 0-5.45 2.57-5.45 5.24 0 1.04.4 2.15.9 2.76.1.12.11.22.08.34l-.33 1.36c-.05.22-.18.27-.41.16-1.5-.7-2.43-2.89-2.43-4.65 0-3.78 2.75-7.26 7.92-7.26 4.16 0 7.39 2.96 7.39 6.92 0 4.13-2.6 7.46-6.22 7.46-1.21 0-2.36-.63-2.75-1.38l-.75 2.85c-.27 1.04-1 2.35-1.49 3.15A12 12 0 1 0 12 0z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">New In</a></li>
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">Charm Club</a></li>
+          <li><a href="#">Mystery Boxes</a></li>
+          <li><a href="#">The £5 Spot</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Delivery Info</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Wholesale</a></li>
+          <li><a href="#">Affiliate</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="copy">© 2026 CarryCute · UK based · Made with 🤍</span>
+      <div class="pay-icons">
+        <span class="pay-icon">VISA</span>
+        <span class="pay-icon">MC</span>
+        <span class="pay-icon">AMEX</span>
+        <span class="pay-icon">PAYPAL</span>
+        <span class="pay-icon">PAY</span>
+        <span class="pay-icon">KLARNA</span>
+        <span class="pay-icon">CLEARPAY</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // FAQ toggle
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!open) item.classList.add('open');
+    });
+  });
+
+  // Letter picker
+  document.querySelectorAll('.letter').forEach(l => {
+    l.addEventListener('click', () => {
+      document.querySelectorAll('.letter').forEach(x => x.classList.remove('active'));
+      l.classList.add('active');
+    });
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.section-head, .product, .cat-card, .review, .deal-card').forEach(el => {
+    el.classList.add('reveal');
+    io.observe(el);
+  });
+</script>
+
+</body>
+</html>
