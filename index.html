@@ -59,10 +59,11 @@
   }
   .announce-track {
     display: flex;
-    gap: 60px;
+    gap: 24px;
+    justify-content: center;
     white-space: nowrap;
-    animation: scroll 35s linear infinite;
-    width: max-content;
+    animation: none;
+    width: 100%;
   }
   .announce span { letter-spacing: 0.04em; }
   .announce span::before { content: '✦'; margin-right: 16px; color: var(--gold); }
@@ -139,7 +140,7 @@
     width: 500px; height: 500px;
     background: radial-gradient(circle, var(--pink-soft) 0%, transparent 70%);
     z-index: 0;
-    opacity: 0.6;
+    opacity: 0.35;
   }
   .hero::after {
     content: '';
@@ -152,7 +153,7 @@
   .hero-grid {
     display: grid;
     grid-template-columns: 1.05fr 1fr;
-    gap: 80px;
+    gap: 56px;
     align-items: center;
     position: relative;
     z-index: 1;
@@ -202,7 +203,7 @@
     letter-spacing: 0.04em;
     border-radius: 100px;
     cursor: pointer;
-    transition: all .25s ease;
+    transition: background .25s ease, color .25s ease;
     border: none;
   }
   .btn-primary {
@@ -211,7 +212,6 @@
   }
   .btn-primary:hover {
     background: var(--rose-deep);
-    transform: translateY(-2px);
   }
   .btn-secondary {
     background: transparent;
@@ -233,13 +233,13 @@
     position: absolute;
     background: white;
     border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(43,43,43,0.08);
+    box-shadow: 0 12px 28px rgba(43,43,43,0.08);
     padding: 14px;
     width: 220px;
-    transition: transform .4s ease;
+    transition: transform .25s ease;
     cursor: pointer;
   }
-  .charm-card:hover { transform: scale(1.05) rotate(0deg) !important; z-index: 5; }
+  .charm-card:hover { transform: scale(1.02) rotate(0deg) !important; z-index: 5; }
   .charm-img {
     width: 100%;
     aspect-ratio: 1;
@@ -267,16 +267,16 @@
 
   .card-1 {
     top: 0px; left: 0px;
-    transform: rotate(-6deg);
+    transform: rotate(-2deg);
   }
   .card-2 {
     top: 80px; right: 0;
-    transform: rotate(4deg);
+    transform: rotate(2deg);
     z-index: 2;
   }
   .card-3 {
     bottom: 20px; left: 90px;
-    transform: rotate(3deg);
+    transform: rotate(1deg);
   }
 
   .floating-tag {
@@ -590,7 +590,6 @@
   }
   .btn-atc:hover {
     background: var(--rose-deep);
-    transform: translateY(-2px);
   }
   .btn-atc.added {
     background: var(--rose);
@@ -1003,8 +1002,8 @@
   }
 
   /* Reveal animations */
-  .reveal { opacity: 0; transform: translateY(20px); transition: all .8s ease; }
-  .reveal.in { opacity: 1; transform: translateY(0); }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .reveal.in { opacity: 1; transform: none; }
 </style>
 </head>
 <body>
@@ -1050,8 +1049,8 @@
     <div class="hero-grid">
       <div class="hero-text">
         <span class="hero-eyebrow">Spring '26 collection</span>
-        <h1>Three pieces.<br>One <em>perfect</em> bag.</h1>
-        <p>We stock just three things — a coquette mini-bag charm, a fluffy bunny plush, and the cutest mini kitten keychain on the internet. Curated, not cluttered.</p>
+        <h1>Three essentials.<br>One <em>clean look</em>.</h1>
+        <p>Just three cute accessories, picked for everyday bags. Simple choices, aesthetic style, no clutter.</p>
         <div class="hero-buttons">
           <a href="#product-11" class="btn btn-primary">Shop the three
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -1310,7 +1309,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="label">★★★★★ 4.9 average</span>
-      <h2>Real reviews from <em>real girlies</em></h2>
+      <h2>Real reviews from <em>UK customers</em></h2>
       <p>Over 400 happy customers across the UK.</p>
     </div>
     <div class="review-grid">
